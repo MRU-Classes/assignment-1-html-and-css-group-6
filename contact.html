@@ -1,23 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Henna's data science minor progress at MRU</title>
-        <meta name="description" content="A student resource page for the Data Science Minor program at Mount Royal University.">
-        <meta name="keywords" content="Mount Royal University, MRU, Data Science Minor, Courses, Roadmap">
-        <meta name="author" content="Anna Nguyen and Honeymair Esteves">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Us - MRU Data Science Minor</title>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Contact page for MRU Data Science Minor" />
+      <meta name="keywords" content="MRU, Data Science, Contact, Student Support" />
+      <meta name="author" content="Anna Nguyen & Honeymair Esteves" />
+      <meta name ="vieport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles/stle.css" />
     </head>
 
-    <nav>
-      <ul>
-        <li><a href="index.html">Main</a></li>
-      </ul>
-    </nav>
-  <body>
-    Contact form here
-  </body>
-  <footer>
-    <p>&COPY; 2025 Anna Nguyen and Honeymair Esteves. All Rights Reserved</p>
-  </footer>
-</html>
+     <body>
+            <nav>
+                <img src="images/HoneyAnnaLogo.jpg" alt="Honey&Anna Logo" style="width: 10%; height: 10%;" />
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <h1> Contact Us</h1>
+            <p> If you're an MRU student with questions about the Data Science Minor, need tutoring, or want to connect, fill out the form below. You can also book a date for a meeting!</p>
+            <br />
+
+            <form method="post" action="/submit-form>
+              <p>
+                <label for="first_name">First Name:</label>
+                <input id="first_name" name="first_name" type="text" size="25" maxlength="30" placeholder="First Name" required /> *
+                <br /><br />
+
+                <label for="preferred_name">Preferred Name:</label>
+                <input id="preferred_name" name="preferred_name" type="text" size="25" maxlength="30" placeholder="Preferred Name" required /> *
+                <br /><br />
+
+                <label for="last_name">Last Name:</label>
+                <input id="last_name" name="last_name" type="text" size="25" maxlength="30" placeholder="Preferred Name" required /> *
+                <br /><br />
+
+                <label for="choosen_date">Pick a date for meeting or help:</label>
+                <input id="choosen_date" name="choosen_date" type="date"  required /> *
+                <br /><br />
+
+                <label for="subject">Subject:</label>
+                <input id="subject" name="subject" type="text" maxlength="40" placeholder="Topic or request" required /> *
+                <br /><br />
+
+                <label for="comments">Your Message:</label><br />
+                <textarea id="comments" name="comments" rows="6" cols="40" placeholder="How can we help you?" required /></textarea> *
+                <br /><br />
+
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" maxlength="100" 
+                  pattern ="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" 
+                  placeholder="name@domain.com" /> *
+                <br /><br />
+
+                <label for="Phone">Phone (optional):</label>
+                <input id="phone" name="phone" type="tel" placeholder="999-999-9999" maxlength="12"
+                  pattern ="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}" />
+              </p>
+
+              <p><strong>What would you like help with?</strong></p>
+              <label><input type="checkbox" name="help" value="tutoring" /> Tutoring Session</label>
+              <label><input type="checkbox" name="help" value="resources" /> Learning Resources</label>
+              <label><input type="checkbox" name="help" value="roadmap" /> Understanding the Curriculum</label>
+              <label><input type="checkbox" name="help" value="project" /> Project Guidance</label>
+              <label><input type="checkbox" name="help" value="general" /> General Questions</label>
+
+              <br />
+
+              <p><strong>How did you find this site?</strong></p>
+              <label><input type="radio" name="source" value"friend" required /> Recommendation from a friend</label>
+              <label><input type="radio" name="source" value"search" /> Search Engine</label>
+              <label><input type="radio" name="source" value"class" /> Course or classmate</label>
+              <label><input type="radio" name="source" value"other" /> Other</label>
+
+              <br/>
+
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </form>
+
+            <footer>
+              <p>&copy; 2025 Anna Nguyen and Honeymair Esteves. All Rights Reserved</p>
+            </footer>
+        </body>
+        </html>
